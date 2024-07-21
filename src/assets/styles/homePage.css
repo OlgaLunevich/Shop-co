@@ -1,0 +1,164 @@
+main{
+    display: flex;
+    /* height: 1950px; */
+
+    .mainContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+
+        .hero{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("src/assets/images/forHomeMain/backgroundImg.svg");
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-color: var(--background-find);
+            
+            
+
+            .labelsBox{
+                display: flex;
+                flex-direction: row;
+                background-color: var(--black);
+                width: 95%;
+                height: 125px;
+                
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .mainText{
+                display: flex;
+                flex-direction: column;
+                width: 95%;
+                height: 660px;
+                /* position: absolute; */
+
+                .mainTextInform{
+                    display: flex;
+                    width: 50%;
+                    height: 80%;
+                    margin-top: 3%;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    .title{
+                        font-weight: 700;
+                        font-size: 64px;
+                        line-height: 64px;
+                    }
+
+                    .text{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+
+                    .button-shopNow{
+                        color: var(--white);
+                        background-color: var(--black);
+                        border-radius: 62px;
+                        height: 52px;
+                        width: 210px;
+                        /* padding: 16px ; */
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        align-content: center;
+                        padding-left: 12%;
+                    }
+
+
+                    .statisticPlace{
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        justify-content: space-between;
+
+                        .statisticBox{
+
+                            .h3{
+                                font-weight: 700;
+                                font-size: 40px;
+                                line-height: 48px;
+                            }
+
+                            .h4{
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 22px;
+
+                            }
+                        }
+                    }
+                }
+
+                .bigStar{
+                    position: absolute;
+                    right: 5%;
+                }
+
+                .smallStar{
+                    position: absolute;
+                    right: 32%;
+                    bottom: 68%;
+
+                }
+                
+            }
+        }
+
+        .categoriesBox{
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+
+            .categoriesTitle{
+                width: 100%;
+                height: 180px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 70px;
+            }
+
+            .categoriesGrid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                justify-items: center;
+
+                .cardCell{
+                    display: flex;
+                    flex-direction: column;
+                    width: 300px;
+                    height: 300px;
+                    background-color: var(--background-grey);
+                    border-radius: 30px;
+                    margin-bottom: 5%;
+                    
+                    .card-content{
+                        width: 100%;
+                        height: 100%;
+                        align-content: center;
+                        font-weight: 700;
+                        font-size: 65px;
+                        line-height: 75px;
+                        word-break: break-all;
+
+                        .content{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

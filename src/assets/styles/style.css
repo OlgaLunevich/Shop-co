@@ -1,0 +1,48 @@
+/* @import 'bulma/css/bulma.css';
+:root {
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #242424;
+    background-color: #f0f0f0;
+  }
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    color: white;
+    background: #242424;
+  }
+} */
+
+@import "variables.css"; 
+@import "header.css"; 
+@import "footer.css"; 
+@import "homePage.css"; 
+@import "categoryPage.css"; 
+@import "productDetailPage.css";
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/src/assets/fonts/Poppins/Poppins-Regular.ttf");
+  font-family: "Rubik";
+  src: url("/src/assets/fonts/Rubik/Rubik-VariableFont_wght.ttf");
+}
+
+
+body{
+  margin: 0%;
+  font-family: "Rubik";
+
+  app{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;  
+  }
+}

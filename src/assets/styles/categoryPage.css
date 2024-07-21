@@ -1,0 +1,251 @@
+.mainContentCategoryPage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .breadCrumbs{
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        height: 50px;
+        align-items: center;
+        border-top-style: solid;
+        border-top-color: var(--border-grey);
+
+        a{
+            text-decoration: none;
+            color: var(--grey-cost);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+        }
+     }
+
+    .forActivitiesWithGroceries{
+        width: 95%;
+        
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .filterPart{
+            width: 295px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            border-style: solid;
+            border-radius: 20px;
+            border-color: var(--border-grey);
+            padding-left: 1%;
+            padding-right: 1%;
+
+            .filters{
+                height: 10%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom-style: solid;
+                border-bottom-color: var(--border-grey);
+                color: var(--black);
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+    
+            }
+
+            .sort{
+                height: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                border-bottom-style: solid;
+                border-bottom-color: var(--border-grey);
+
+                .sortTitle{
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+                .sortAscending, .sortDescending{
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: var(--footer-text);
+                    
+                    &.active {
+                        font-weight: 700;
+                        color: var(--footer-text);
+                    }
+
+                    &.inactive {
+                        font-weight: 400;
+                    }    
+                }
+
+            }
+
+            .price{
+                height: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                
+                border-bottom-style: solid;
+                border-bottom-color: var(--border-grey);
+                
+
+                .priceRow{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+                .priceSliderHeader{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
+                .priceSlider{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    input{
+                        width:40%;
+                    }
+
+                
+                }
+
+                
+            }
+
+            .buttons{
+                height: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+
+                .buttonApply{
+                    background-color: var(--black) ;
+                    color: var(--white);
+                    border-radius: 62px;
+                    height: 30%;
+                }
+
+                .buttonReset{
+                    background-color: var(--background-find);
+                    border-radius: 62px;
+                    height: 30%;
+                    color: var(--black);
+                }
+            }
+        }
+
+        .cardsPart{
+            width: 70%;
+            
+            display: flex;
+            flex-direction: column;
+
+            .cardsPartTitle{
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 38px;
+            }
+            
+
+            .groceriesGrid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+
+                .grocerieCard{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    width: 300px;
+                    height: 500px;
+                    
+                    
+
+                    .productImg{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        width: 300px;
+                        height: 300px;
+                        background-color: var(--grey-background-product-cards);
+                        border-radius: 30px;
+
+                        img{
+                            height: 90%;
+                        }
+                    }
+
+                    .productRaitingRow{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+
+                        .starsRaitng{
+                            display: flex;
+                            flex-direction: row;
+                        }
+
+                        .digitRaiting{
+                            padding-left: 5%;
+                        }
+
+                        
+                    }
+                    
+                    .cost{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+
+                        .a{
+                            padding-right: 5%;
+                        }
+
+                        .CostNow {
+                            font-weight:700;
+                            font-size: 25px;
+                            line-height: 29px;
+                        }
+                        .oldCost {
+                            font-weight:700;
+                            font-size: 25px;
+                            line-height: 29px;
+                            color: var(--grey-cost);
+                            text-decoration:line-through;
+                        }
+                        .costDiscountPercentage {
+                            color: var(--red-discount);
+                            background-color: var(--pink-discount-field);
+                            border-radius: 60px;
+                            padding-left: 5%;
+    
+                        }
+                    }
+                    
+                }
+
+            }
+        }
+
+    }
+}

@@ -1,0 +1,13 @@
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --border-grey: #0000001A;
+    --background-grey: #ccc7c7;
+    --background-find: #F2F0F1;
+    --grey-cost: #00000066;
+    --red-discount: #FF3333;
+    --pink-discount-field: #FF33331A;
+    --grey-background-product-cards: #F0EEED;
+    --footer-grey: #F0F0F0;
+    --footer-text: #00000099;
+}
